@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
   color: var(--cor-de-fonte);
 }
 
@@ -19,6 +19,8 @@
 body {
   background-color: var(--ligth);
   overflow: overlay;
+  font-family: 'DM Sans';
+
 }
 
 body,
@@ -270,6 +272,10 @@ body.menu-expandad{
 
   body{
     overflow: auto;
+  }
+
+  nav{
+    padding-block: 40px;
   }
 
   nav .wrapper > button{
