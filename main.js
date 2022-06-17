@@ -23,7 +23,7 @@ function mostrarInput(flag){
     // input.style.display = 'block'
     input.style.opacity = '1'
     input.style.visibility = 'visible'
-    input.style.transition = '1s'
+    input.style.transition = '600ms'
     // input.style.transform = 'translateX(0)'
     
     button.style.borderTopLeftRadius = '0'
@@ -53,115 +53,98 @@ function closeMenu(){
 let products = {
   data:[
       {
-      productName: "Bomba Submersa EBARA",
-      category:"Bombas",
+      productName: "CONTROLE GAMER PS3/PS2/PC",
       price:"30",
-      image:"controle.jpg",
+      image:"https://i.postimg.cc/d1XWStfy/controle.jpg",
   },
   
   {
-      productName: "Pincéis atlas tamanhos 1/2 ,3/4 e 1.1/2",
-      category:"variados",
+      productName: "Linha Intelbras",
       price:"5.50",
-      image:"intelbras.jpg",
+      image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
   },
 
   {
-      productName: "Sementes de milho híbrido - 20Kg.",
-      category:"plantação",
+      productName: "Headset HP",
       price:"90000",
-      image:"headset.jpg",
+      image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
   
   {
-      productName: "Pincéis atlas tamanhos 1/2 ,3/4 e 1.1/2",
-      category:"variados",
-      price:"5.50",
-      image:"intelbras.jpg",
+    productName: "Linha Intelbras",
+    price:"5.50",
+    image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
   },
 
   {
-      productName: "Sementes de milho híbrido - 20Kg.",
-      category:"plantação",
-      price:"90000",
-      image:"headset.jpg",
+    productName: "Headset HP",
+    price:"90000",
+    image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
   
   {
-      productName: "Pincéis atlas tamanhos 1/2 ,3/4 e 1.1/2",
-      category:"variados",
-      price:"5.50",
-      image:"intelbras.jpg",
+    productName: "Linha Intelbras",
+    price:"5.50",
+    image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
   },
 
   {
-      productName: "Sementes de milho híbrido - 20Kg.",
-      category:"plantação",
-      price:"90000",
-      image:"headset.jpg",
+    productName: "Headset HP",
+    price:"90000",
+    image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
   {
-      productName: "Pincéis atlas tamanhos 1/2 ,3/4 e 1.1/2",
-      category:"variados",
-      price:"5.50",
-      image:"intelbras.jpg",
+    productName: "Linha Intelbras",
+    price:"5.50",
+    image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
   },
 
   {
-      productName: "Sementes de milho híbrido - 20Kg.",
-      category:"plantação",
-      price:"90000",
-      image:"headset.jpg",
+    productName: "Headset HP",
+    price:"90000",
+    image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
   
   {
-      productName: "Pincéis atlas tamanhos 1/2 ,3/4 e 1.1/2",
-      category:"variados",
-      price:"5.50",
-      image:"intelbras.jpg",
+    productName: "Linha Intelbras",
+    price:"5.50",
+    image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
   },
 
   {
-      productName: "Sementes de milho híbrido - 20Kg.",
-      category:"plantação",
-      price:"90000",
-      image:"headset.jpg",
+    productName: "Headset HP",
+    price:"90000",
+    image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
   {
-      productName: "Sementes de milho híbrido - 20Kg.",
-      category:"plantação",
-      price:"90000",
-      image:"headset.jpg",
+    productName: "Headset HP",
+    price:"90000",
+    image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
   {
-      productName: "Sementes de milho híbrido - 20Kg.",
-      category:"plantação",
-      price:"90000",
-      image:"headset.jpg",
+    productName: "Headset HP",
+    price:"90000",
+    image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
   {
-      productName: "Sementes de milho híbrido - 20Kg.",
-      category:"plantação",
-      price:"90000",
-      image:"headset.jpg",
+    productName: "Headset HP",
+    price:"90000",
+    image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
   {
-      productName: "Sementes de milho híbrido - 20Kg.",
-      category:"plantação",
-      price:"90000",
-      image:"headset.jpg",
+    productName: "Headset HP",
+    price:"90000",
+    image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
   {
-      productName: "Sementes de milho híbrido - 20Kg.",
-      category:"plantação",
-      price:"90000",
-      image:"headset.jpg",
+    productName: "Headset HP",
+    price:"90000",
+    image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
   {
-      productName: "Sementes de milho híbrido - 20Kg.",
-      category:"plantação",
-      price:"90000",
-      image:"headset.jpg",
+    productName: "Headset HP",
+    price:"90000",
+    image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   }
 
  ],
