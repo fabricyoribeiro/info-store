@@ -291,16 +291,16 @@ document.getElementById("float-input").addEventListener("keyup", () => {
 
 //inicialmente exibir todos os produtos
 
-ScrollReveal({
-  origin: 'top',
-  distance: '30px',
-  duration: 800,
-}).reveal(`
-  #home .home,
+window.onload = () => {
+  filterProduct('Todos')
+  
+  ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 800,
+  }).reveal(`
   #home #products,
   #products .card
-`);
+  `);
 
-window.onload = () => {
-  filterProduct("Todos")
 }
