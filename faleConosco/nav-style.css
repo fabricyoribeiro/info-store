@@ -193,7 +193,7 @@ input#float-input{
   height: 100vh;
   width: 100vw;
   position: fixed;
-  background-color: hsl(6, 32%, 65%);
+  background-color: hsl(245, 46%, 72%);
   z-index: 10;
   display: flex;
   justify-content: center;
