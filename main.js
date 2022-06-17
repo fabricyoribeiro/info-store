@@ -231,7 +231,7 @@ function filterProduct(value) {
 
 }
 // Search button click
-document.getElementById("search").addEventListener("click", () => {
+document.getElementById("search-input").addEventListener('keyup', () => {
   //initializations
   let searchInput = document.getElementById("search-input").value;
   let elements = document.querySelectorAll(".product-name");
@@ -254,7 +254,7 @@ document.getElementById("search").addEventListener("click", () => {
   })
 } );
 
-document.getElementById("button").addEventListener("click", () => {
+document.getElementById("float-input").addEventListener("keyup", () => {
   //initializations
   let searchInput = document.getElementById("float-input").value;
   let elements = document.querySelectorAll(".product-name");
@@ -277,6 +277,10 @@ document.getElementById("button").addEventListener("click", () => {
   })
 } );
 
+// document.getElementById('search-input').addEventListener('keyup', ()=> {
+//   filterProduct('Todos')
+// })
+
 // while (true){
 
 //   let input = document.getElementById('search-input')
@@ -286,6 +290,16 @@ document.getElementById("button").addEventListener("click", () => {
 // }
 
 //inicialmente exibir todos os produtos
+
+ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 800,
+}).reveal(`
+  #home .home,
+  #home #products,
+  #products .card
+`);
 
 window.onload = () => {
   filterProduct("Todos")
