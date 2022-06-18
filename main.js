@@ -53,95 +53,96 @@ function closeMenu(){
 let products = {
   data:[
       {
+      id: 1,
       productName: "CONTROLE GAMER PS3/PS2/PC",
       price:"30",
       image:"https://i.postimg.cc/d1XWStfy/controle.jpg",
   },
   
-  {
+  {   id: 2,
       productName: "Linha Intelbras",
       price:"5.50",
       image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
   },
 
-  {
+  {   id: 3,
       productName: "Headset HP",
       price:"90000",
       image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
   
-  {
+  { id: 4,
     productName: "Linha Intelbras",
     price:"5.50",
     image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
   },
 
-  {
+  { id: 5,
     productName: "Headset HP",
     price:"90000",
     image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
   
-  {
+  { id: 6,
     productName: "Linha Intelbras",
     price:"5.50",
     image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
   },
 
-  {
+  { id: 7,
     productName: "Headset HP",
     price:"90000",
     image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
-  {
+  { id: 8,
     productName: "Linha Intelbras",
     price:"5.50",
     image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
   },
 
-  {
+  { id: 9,
     productName: "Headset HP",
     price:"90000",
     image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
   
-  {
+  { id: 10,
     productName: "Linha Intelbras",
     price:"5.50",
     image:"https://i.postimg.cc/wv3fVswz/intelbras.jpg",
   },
 
-  {
+  { id: 11,
     productName: "Headset HP",
     price:"90000",
     image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
-  {
+  { id: 12,
     productName: "Headset HP",
     price:"90000",
     image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
-  {
+  { id: 13,
     productName: "Headset HP",
     price:"90000",
     image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
-  {
+  { id: 14,
     productName: "Headset HP",
     price:"90000",
     image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
-  {
+  { id: 15,
     productName: "Headset HP",
     price:"90000",
     image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
-  {
+  { id: 16,
     productName: "Headset HP",
     price:"90000",
     image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
   },
-  {
+  { id: 17,
     productName: "Headset HP",
     price:"90000",
     image:"https://i.postimg.cc/h4dMtnw2/headset.jpg",
@@ -151,9 +152,48 @@ let products = {
 
 };
 
+function mostrarSaibaMais(id){
+  let a = document.getElementById(id)
+  a.style.transition = '400ms'
+  a.style.visibility = 'visible'
+  a.style.opacity = '1'
+}
+
+function esconderSaibaMais(id){
+  let a = document.getElementById(id)
+  a.style.visibility = 'hidden'
+  a.style.transition = '400ms'
+  a.style.opacity = '0'
+}
+
+
 for(let i of products.data){
+  // sessão teste
+  let a = document.createElement("a")
+  a.classList.add('popup')
+
+  a.setAttribute('id', i.id)
+
+  a.setAttribute('href', `https://wa.me/5587991770638?text=Olá, Sobre o produto "${i.productName.toUpperCase()}" : `)
+
+  let divPopup = document.createElement('div')
+
+
+  let h3 = document.createElement('h3')
+  h3.innerText = 'Saiba Mais'
+
+  divPopup.appendChild(h3)
+  
+  a.appendChild(divPopup)
+
   //Criando o card.
   let card = document.createElement("div");
+
+  card.onmouseover = () => { mostrarSaibaMais(i.id) }
+  card.onmouseout = () => { esconderSaibaMais(i.id) }
+
+  card.appendChild(a)
+
   //O cartão deve ter categoria e deve ficar escondido inicialmente
   card.classList.add("card", i.category, "hide");
   //image div
@@ -178,14 +218,10 @@ for(let i of products.data){
   let price = document.createElement("h4");
   price.innerText = "$" + i.price;
   container.appendChild(price);
-
-
-
+  
   card.appendChild(container);
 
   document.getElementById("products").appendChild(card);
-
-  
 
 }
 
@@ -277,30 +313,18 @@ document.getElementById("float-input").addEventListener("keyup", () => {
   })
 } );
 
-// document.getElementById('search-input').addEventListener('keyup', ()=> {
-//   filterProduct('Todos')
-// })
-
-// while (true){
-
-//   let input = document.getElementById('search-input')
-//   if(input.value == ''){
-//     filterProduct('Todos')
-//   }
-// }
-
 //inicialmente exibir todos os produtos
 
 window.onload = () => {
   filterProduct('Todos')
   
-  ScrollReveal({
-    origin: 'top',
-    distance: '30px',
-    duration: 800,
-  }).reveal(`
-  #home #products,
-  #products .card
-  `);
+  // ScrollReveal({
+  //   origin: 'top',
+  //   distance: '30px',
+  //   duration: 800,
+  // }).reveal(`
+  // #home #products,
+  // #products .card
+  // `);
 
 }

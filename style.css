@@ -294,11 +294,32 @@ body.menu-expandad{
   border: 1px solid rgb(145, 145, 145);
   box-shadow: 0;
   transition: box-shadow 400ms;
+
+  position: relative;
 }
 
 .card:hover{
   box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.342);
-  cursor: pointer;
+}
+
+.card .popup{
+  background-color: #c02516;
+  padding: 8px;
+  border-radius: 0 0 15px 0;
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  text-decoration: none;
+}
+
+.card a div{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.card .popup h3{
+  color: #FFF;
 }
 
 .container {
@@ -388,3 +409,12 @@ body.menu-expandad{
     font-weight: 600;
   }
 }
+
+/* .a-style{
+  display: flex;
+  text-decoration: none;
+} */
+/* 
+.card{
+  position: relative;
+} */
