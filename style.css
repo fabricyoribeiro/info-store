@@ -163,7 +163,7 @@ input#float-input{
   margin-top: 0;
   border-radius: 30px;
   transition: 1s;
-  z-index: 100;
+  z-index: 101;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
 }
 
