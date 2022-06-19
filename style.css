@@ -11,7 +11,7 @@
   --dark: hsl(259, 37%, 85%);
   --nav-heigth: 63px;
 
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 52.5%; /* 1rem = 10px */
 
 }
 .logo {
@@ -403,7 +403,7 @@ footer p{
   }
   
   .home{
-    padding-top: calc( 3rem + var(--nav-heigth));
+    padding-top: calc( 1rem + var(--nav-heigth));
     padding-bottom: 2em;
 
   }
