@@ -56,8 +56,8 @@ section > div a{
 
 @media (min-width: 600px){
   section div.mapa iframe{
-    width: 70%;
-    height: 60vw;
+    width: 47%;
+    height: 45vw;
     border-radius: 10px;
     box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.452);
   }
@@ -65,7 +65,7 @@ section > div a{
 
 @media (min-width: 900px){
   section div:first-child {
-    width: 50vw;
+    width: 30vw;
     display: grid;
     grid-template-columns: 40% 60%;
     justify-content: space-around;

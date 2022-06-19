@@ -9,8 +9,10 @@ function onScroll(){
 function showNavOnScroll(){
   if(scrollY>0){
     document.getElementById('navigation').classList.add('scroll')
+    document.getElementById('footer').classList.remove('hide')
   }else{
     document.getElementById('navigation').classList.remove('scroll')
+    document.getElementById('footer').classList.add('hide')
   }
 }
 
@@ -20,11 +22,9 @@ function mostrarInput(flag){
   let input = document.getElementById('float-input')
 
   if(flag){
-    // input.style.display = 'block'
     input.style.opacity = '1'
     input.style.visibility = 'visible'
     input.style.transition = '600ms'
-    // input.style.transform = 'translateX(0)'
     
     button.style.borderTopLeftRadius = '0'
     button.style.borderBottomLeftRadius = '0'
@@ -35,8 +35,6 @@ function mostrarInput(flag){
 
     button.style.borderTopLeftRadius = '30px'
     button.style.borderBottomLeftRadius = '30px'
-    // input.style.transform = 'translateX(100%)'
-    // input.style.display = 'none'
 
   }
 
@@ -168,7 +166,6 @@ function esconderSaibaMais(id){
 
 
 for(let i of products.data){
-  // sessão teste
   let a = document.createElement("a")
   a.classList.add('popup')
 
@@ -230,17 +227,17 @@ for(let i of products.data){
 
 function filterProduct(value) {
   //button classe codigo
-  let buttons = document.querySelectorAll(".button-value");
-  buttons.forEach(button => {
-      //verifique se o valor é igual a innerText
+  // let buttons = document.querySelectorAll(".button-value");
+  // buttons.forEach(button => {
+  //     //verifique se o valor é igual a innerText
 
-      if(value.toUpperCase() == button.innerText.toUpperCase()){
-          button.classList.add("active");
-      }
-      else{
-          button.classList.remove("active");
-      }
-  });
+  //     if(value.toUpperCase() == button.innerText.toUpperCase()){
+  //         button.classList.add("active");
+  //     }
+  //     else{
+  //         button.classList.remove("active");
+  //     }
+  // });
 
   // selecione todos os cards
   let elements = document.querySelectorAll(".card");
@@ -317,14 +314,4 @@ document.getElementById("float-input").addEventListener("keyup", () => {
 
 window.onload = () => {
   filterProduct('Todos')
-  
-  // ScrollReveal({
-  //   origin: 'top',
-  //   distance: '30px',
-  //   duration: 800,
-  // }).reveal(`
-  // #home #products,
-  // #products .card
-  // `);
-
 }

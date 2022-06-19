@@ -76,18 +76,26 @@ nav.scroll {
 /*=============HOME==============*/
 .home {
   text-align: center;
-  padding: calc( 10px + var(--nav-heigth)) 1em 2em 1em;
+  padding: calc( 10px + var(--nav-heigth)) 1em 1em 1em;
 }
 
 .home h1 {
-  margin-bottom: 1em;
-  font-size: 25px;
+  margin-bottom: .5em;
+  font-size: 20px;
 
 }
 
 .home h4{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #c02516;
+  font-weight: bold;
+  font-size: 1.2em;
+
+}
+
+.home h2{
+  font-size: 20px;
+
 }
 
 
@@ -98,6 +106,11 @@ nav.scroll {
 
 .hide{
 display: none;
+}
+
+.filter #search-container{
+  display: flex;
+  align-items: center;
 }
 
 #search-container input {
@@ -118,11 +131,11 @@ display: none;
 
 #navigation #search-container button {
   border: #6759ff;
-  padding: 1em 1em;
+  padding: 0 1em;
   background-color: #6759ff;
   color: #ffffff;
   border-radius: 10px;
-
+  height: 40px;
   border: #6759ff;
   background-color: #6759ff;
   color: #ffffff;
@@ -132,7 +145,7 @@ display: none;
 #home .filter #search-container{
   position: fixed;
   right: 20px;
-  bottom: 20px;
+  bottom: 40px;
   display: flex;
   align-items: center;
 }
@@ -294,8 +307,6 @@ body.menu-expandad{
   border: 1px solid rgb(145, 145, 145);
   box-shadow: 0;
   transition: box-shadow 400ms;
-
-  position: relative;
 }
 
 .card:hover{
@@ -341,6 +352,19 @@ body.menu-expandad{
   width: 100%;
 }
 
+/*=============FOOTER==============*/
+footer{
+  background-color: hsl(259, 37%, 65%);
+  position: sticky;
+  bottom: 0;
+  text-align: center;
+}
+footer p{
+  font-weight: bold;
+}
+
+
+
 /*=============RESPONSIVO==============*/
 
 @media (min-width: 900px) {
@@ -377,6 +401,7 @@ body.menu-expandad{
   
   .home{
     padding-top: calc( 30px + var(--nav-heigth));
+    padding-bottom: 2em;
 
   }
 
@@ -407,6 +432,23 @@ body.menu-expandad{
     color: var(--cor-de-fonte);
     font-size: 20px;
     font-weight: 600;
+  }
+
+
+
+  .home {
+    text-align: center;
+  }
+  
+  
+  .home h4{
+    margin-bottom: 20px;
+    color: #c02516;
+  }
+  
+  .home h2{
+    font-size: 31px;
+  
   }
 }
 
