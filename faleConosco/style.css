@@ -9,70 +9,85 @@
   --ligth: hsl(259, 95%, 95%);
   --dark: hsl(259, 37%, 85%);
   --nav-heigth: 63px;
+
+  font-size: 62.5%; /* 1rem = 10px */
+
 }
 
 
 section{
-  padding-bottom: 40px;
+  padding-bottom: 4rem;
+}
+
+section h2{
+  font-size: 2.5rem;
 }
 
 section ul{
   width: 90%;
   margin: auto;
   list-style: none;
-  padding-top: 20px;
+  padding-top: 2rem;
   text-align: center;
 }
 
 section ul li{
   line-height: 1.5;
+  font-size: 1.7rem;
 }
 
 section > div{
   text-align: center;
-  text-align: center;
   padding-top: var(--nav-heigth);
-  padding-inline: 15px;
+  padding-inline: 1.5rem;
   margin: auto;
 }
 
 section div.mapa{
-  padding-top: 20px;
+  padding-top: 2rem;
 }
 
 section > div a{
   text-decoration: none;
   background-color: hsl(190, 100%, 26%);
   color: #FFF;
-  
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 170px;
-  padding: 10px 20px;
-  margin: 10px auto;
-  border-radius: 40px;
+  width: 17rem;
+  padding: 1rem 2rem;
+  margin: 1rem auto;
+  border-radius: 4rem;
 }
 
 @media (min-width: 600px){
   section div.mapa iframe{
     width: 47%;
     height: 45vw;
-    border-radius: 10px;
-    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.452);
+    border-radius: 1rem;
+    box-shadow: 0.7rem 0.7rem 1.5rem rgba(0, 0, 0, 0.452);
   }
 }
 
 @media (min-width: 900px){
   section div:first-child {
-    width: 30vw;
+    width: 45vw;
     display: grid;
     grid-template-columns: 40% 60%;
     justify-content: space-around;
     margin: auto;
     align-items: center;
-    padding-top: calc(var(--nav-heigth) + 30px);
+    padding-top: calc(var(--nav-heigth) + 3rem);
 
+  }
+
+  section h2{
+    font-size: 3.1rem;
+  }
+  
+  section ul li{
+    font-size: 2.3rem;
   }
 
   section{

@@ -10,9 +10,12 @@
   --ligth: hsl(259, 95%, 95%);
   --dark: hsl(259, 37%, 85%);
   --nav-heigth: 63px;
+
+  font-size: 62.5%; /* 1rem = 10px */
+
 }
 .logo {
-  width: 130px;
+  width: 13rem;
 }
 
 body {
@@ -22,7 +25,7 @@ body {
 }
 
 main{
-  padding-bottom: 50px;
+  padding-bottom: 5rem;
 }
 
 body,
@@ -35,7 +38,7 @@ html {
 nav {
   display: flex;
   justify-content: center;
-  padding: 0px 10px;
+  padding: 0 1rem;
   position: fixed;
   width: 100vw;
   height: var(--nav-heigth);
@@ -70,31 +73,31 @@ nav.scroll {
 }
 
 .wrapper {
-  width: min(600px, 100%);
+  width: min(60rem, 100%);
   margin-inline: auto;
 }
 /*=============HOME==============*/
 .home {
   text-align: center;
-  padding: calc( 10px + var(--nav-heigth)) 1em 1em 1em;
+  padding: calc( 1rem + var(--nav-heigth)) 1rem 1rem 1rem;
 }
 
 .home h1 {
-  margin-bottom: .5em;
-  font-size: 20px;
+  margin-bottom: .5rem;
+  font-size: 2rem;
 
 }
 
 .home h4{
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   color: #c02516;
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 2rem;
 
 }
 
 .home h2{
-  font-size: 20px;
+  font-size: 2rem;
 
 }
 
@@ -116,11 +119,11 @@ display: none;
 #search-container input {
   border: none;
   background-color: #FFF;
-  width: 180px;
-  height: 40px;
+  width: 18rem;
+  height: 4rem;
   border-bottom: none;
-  padding-inline: 20px;
-  border-radius: 30px 0 0 30px;
+  padding-inline: 2rem;
+  border-radius: 3rem 0 0 3rem;
 }
 
 #search-container input:focus {
@@ -134,29 +137,29 @@ display: none;
   padding: 0 1em;
   background-color: #6759ff;
   color: #ffffff;
-  border-radius: 10px;
-  height: 40px;
+  border-radius: 1rem;
+  height: 4rem;
   border: #6759ff;
   background-color: #6759ff;
   color: #ffffff;
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 3rem 3rem 0;
 }
 
 #home .filter #search-container{
   position: fixed;
-  right: 20px;
-  bottom: 40px;
+  right: 2rem;
+  bottom: 4rem;
   display: flex;
   align-items: center;
 }
 
 input#float-input{
   background-color: #FFF;
-  width: 220px;
-  height: 50px;
+  width: 22rem;
+  height: 5rem;
   border-bottom: none;
-  padding-inline: 20px;
-  border-radius: 30px 0 0 30px;
+  padding-inline: 2rem;
+  border-radius: 3rem 0 0 3rem;
   opacity: 0;
   visibility: hidden;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
@@ -167,31 +170,31 @@ input#float-input{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 5rem;
+  height: 5rem;
   border: #6759ff;
   margin-left: 0;
   background-color: #6759ff;
   color: #ffffff;
   margin-top: 0;
-  border-radius: 30px;
+  border-radius: 3rem;
   transition: 1s;
   z-index: 100;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.466);
 }
 
 #home button:focus{
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 3rem 3rem 0;
   transition: 600ms;
 }
 
 #search-container button .fa{
-  font-size: 20px;
+  font-size: 2rem;
   color: #FFF;
 }
 
 #buttons{
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
 
@@ -244,7 +247,7 @@ input#float-input{
 
 .menu-expandad .close-menu{
   position: relative;
-  right: 5px;
+  right: 0.5rem;
 }
 
 .menu{
@@ -254,18 +257,18 @@ input#float-input{
 
 .menu ul li{
   list-style: none;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .menu ul li a{
   color: #FFF;
-  font-size: 30px;
+  font-size: 3rem;
 }
 
 .menu .social-links{
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 3rem;
 }
 
 .menu-expandad #home .filter{
@@ -295,12 +298,12 @@ body.menu-expandad{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 2.5rem;
 }
 
 .card {
-  width: 280px;
-  padding: 15px;
+  width: 28rem;
+  padding: 1.5rem;
   border-radius: 8px;
   background-color: #FFF;
   text-align: center;
@@ -327,26 +330,27 @@ body.menu-expandad{
 .card a div{
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  gap: 0.5rem;
 }
 
 .card .popup h3{
   color: #FFF;
+  font-size: 1.8rem;
 }
 
 .container {
-  padding-top: 10px;
+  padding-top: 1rem;
 
 }
 
 .container h3{
-  padding-block: 5px;
-
+  padding-block: 0.5rem;
+  font-size: 2rem;
 }
 
 .container h4 {
   color: #c02516;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .card img {
@@ -359,6 +363,7 @@ footer{
   position: sticky;
   bottom: 0;
   text-align: center;
+  font-size: 1.7rem;
 }
 footer p{
   font-weight: bold;
@@ -370,7 +375,7 @@ footer p{
 
 @media (min-width: 900px) {
   .wrapper {
-    width: 900px;
+    width: 90rem;
   }
 
   body{
@@ -383,7 +388,7 @@ footer p{
   }
 
   nav{
-     padding-block: 40px;
+     padding-block: 4rem;
   }
 
   nav .filter{
@@ -396,12 +401,12 @@ footer p{
 
   .home h1 {
     margin-bottom: 1em;
-    font-size: 32px;
+    font-size: 3.2rem;
     
   }
   
   .home{
-    padding-top: calc( 30px + var(--nav-heigth));
+    padding-top: calc( 3rem + var(--nav-heigth));
     padding-bottom: 2em;
 
   }
@@ -431,7 +436,7 @@ footer p{
 
   .menu ul li a{
     color: var(--cor-de-fonte);
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
   }
 
@@ -443,12 +448,12 @@ footer p{
   
   
   .home h4{
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     color: #c02516;
   }
   
   .home h2{
-    font-size: 31px;
+    font-size: 3.1rem;
   
   }
 }
