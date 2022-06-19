@@ -295,7 +295,6 @@ body.menu-expandad{
   box-shadow: 0;
   transition: box-shadow 400ms;
 
-  position: relative;
 }
 
 .card:hover{
