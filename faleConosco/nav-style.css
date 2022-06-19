@@ -64,6 +64,8 @@ nav button {
 
 nav .filter{
   display: none;
+  margin-right: 1rem;
+
 }
 
 nav.scroll {
