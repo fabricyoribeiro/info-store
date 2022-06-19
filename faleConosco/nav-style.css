@@ -72,8 +72,10 @@ nav.scroll {
   margin-inline: auto;
 }
 
-.filter{
+.filter #search-container{
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .hide{
@@ -99,7 +101,8 @@ display: none;
 
 #navigation #search-container button {
   border: #6759ff;
-  padding: 1em 1em;
+  padding: 0 1em;
+  height: 40px;
   background-color: #6759ff;
   color: #ffffff;
   border-radius: 10px;
@@ -216,6 +219,7 @@ input#float-input{
 .menu ul li a{
   color: #FFF;
   font-size: 30px;
+  font-weight: 700;
 }
 
 .menu .social-links{
