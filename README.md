@@ -1,4 +1,4 @@
 # info-store
 Site da Info Store
 
-Para ver esse site:  https://github.com/fabricyoribeiro/info-store
+Para ver o site  da Info Store:  https://github.com/fabricyoribeiro/info-store
