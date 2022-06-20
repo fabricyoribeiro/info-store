@@ -11,7 +11,7 @@
   --dark: hsl(259, 37%, 85%);
   --nav-heigth: 63px;
 
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 52.5%; /* 1rem = 10px */
 
 }
 .logo {
@@ -66,6 +66,7 @@ nav button {
 
 nav .filter{
   display: none;
+  margin-right: 1rem;
 }
 
 nav.scroll {
@@ -79,11 +80,11 @@ nav.scroll {
 /*=============HOME==============*/
 .home {
   text-align: center;
-  padding: calc( 1rem + var(--nav-heigth)) 1rem 1rem 1rem;
+  padding: calc( 1rem + var(--nav-heigth)) 1rem 2rem 1rem;
 }
 
 .home h1 {
-  margin-bottom: .5rem;
+  margin-bottom: 1.5rem;
   font-size: 2rem;
 
 }
@@ -403,8 +404,8 @@ footer p{
   }
   
   .home{
-    padding-top: calc( 3rem + var(--nav-heigth));
-    padding-bottom: 2em;
+    padding-top: calc( 1rem + var(--nav-heigth));
+    padding-bottom: 4em;
 
   }
 
