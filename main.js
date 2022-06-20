@@ -129,7 +129,7 @@ for(let i of products.data){
 
   a.setAttribute('id', i.id)
 
-  a.setAttribute('href', `https://wa.me/5587991770638?text=Olá, Sobre o produto "${i.productName.toUpperCase()}" : `)
+  a.setAttribute('href', `https://wa.me/558738711520?text=Olá, Sobre o produto "${i.productName.toUpperCase()}": `)
 
   let divPopup = document.createElement('div')
 
@@ -184,18 +184,6 @@ for(let i of products.data){
 //parâmetro passado do botão (parâmetro igual a categoria)
 
 function filterProduct(value) {
-  //button classe codigo
-  // let buttons = document.querySelectorAll(".button-value");
-  // buttons.forEach(button => {
-  //     //verifique se o valor é igual a innerText
-
-  //     if(value.toUpperCase() == button.innerText.toUpperCase()){
-  //         button.classList.add("active");
-  //     }
-  //     else{
-  //         button.classList.remove("active");
-  //     }
-  // });
 
   // selecione todos os cards
   let elements = document.querySelectorAll(".card");
