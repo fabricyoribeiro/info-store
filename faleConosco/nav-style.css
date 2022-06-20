@@ -11,7 +11,7 @@
   --dark: hsl(259, 37%, 85%);
   --nav-heigth: 63px;
 
-  font-size: 62.5%; /* 1rem = 10px */
+  font-size: 52.5%; /* 1rem = 10px */
 
 }
 .logo {
@@ -64,6 +64,8 @@ nav button {
 
 nav .filter{
   display: none;
+  margin-right: 1rem;
+
 }
 
 nav.scroll {
