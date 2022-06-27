@@ -172,7 +172,9 @@ for(let i of products.data){
   //preço
   let price = document.createElement("h4");
   price.innerText = "R$ " + i.price;
-  container.appendChild(price);
+
+  //tirei o preço
+  //container.appendChild(price);
   
   card.appendChild(container);
 
